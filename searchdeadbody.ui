@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>searchDeadBody</class>
+ <widget class="QDialog" name="searchDeadBody">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1920</width>
+    <height>1080</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1920</width>
+    <height>1080</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:rgb(0, 77, 56);
+color: rgb(255, 255, 255);</string>
+  </property>
+  <widget class="QStackedWidget" name="stackedWidget">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>160</y>
+     <width>481</width>
+     <height>421</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="page_2">
+    <widget class="QLineEdit" name="searchLineEdit">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>30</y>
+       <width>251</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);
+font: 11pt &quot;Segoe UI&quot;;</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="searchButton">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>30</y>
+       <width>121</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(0, 77, 56);
+font: 600 12pt &quot;Segoe UI&quot;;
+color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>Search Grave</string>
+     </property>
+    </widget>
+    <widget class="QTableWidget" name="graveTable">
+     <property name="geometry">
+      <rect>
+       <x>45</x>
+       <y>90</y>
+       <width>391</width>
+       <height>192</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QTableWidget {
+    background-color: rgb(240, 255, 252); /* soft mint background for contrast */
+    color: rgb(0, 50, 40); /* dark green text */
+    gridline-color: rgb(180, 220, 210); /* soft line */
+    border: 1px solid rgb(0, 112, 82);
+    selection-background-color: rgb(0, 112, 82); /* selected row */
+    selection-color: white;
+    alternate-background-color: rgb(225, 245, 238); /* subtle alt row */
+}
+
+QTableWidget::item:hover {
+    background-color: rgb(0, 112, 82);
+    color: white;
+}
+
+QHeaderView::section {
+    background-color: rgb(0, 112, 82);
+    color: white;
+    font-weight: bold;
+    padding: 6px;
+    border: 1px solid rgb(180, 220, 210);
+}
+
+QScrollBar:vertical, QScrollBar:horizontal {
+    background: rgb(240, 255, 252);
+    border: none;
+    width: 12px;
+    margin: 0px;
+}
+
+QScrollBar::handle:vertical, QScrollBar::handle:horizontal {
+    background: rgb(0, 112, 82);
+    border-radius: 6px;
+    min-height: 20px;
+}
+
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical,
+QScrollBar::add-line:horizontal, QScrollBar::sub-line:horizontal {
+    background: none;
+    border: none;
+}
+
+QTableWidget {
+    background-color: rgb(240, 255, 252); /* soft mint background for contrast */
+    color: rgb(0, 50, 40); /* dark green text */
+    gridline-color: rgb(180, 220, 210); /* soft line */
+    border: 1px solid rgb(0, 112, 82);
+    selection-background-color: rgb(0, 112, 82); /* selected row */
+    selection-color: white;
+    alternate-background-color: rgb(225, 245, 238); /* subtle alt row */
+}
+
+QTableWidget::item:hover {
+    background-color: rgb(0, 112, 82);
+    color: white;
+}
+
+QHeaderView::section {
+    background-color: rgb(0, 112, 82);
+    color: white;
+    font-weight: bold;
+    padding: 6px;
+    border: 1px solid rgb(180, 220, 210);
+}
+
+QScrollBar:vertical, QScrollBar:horizontal {
+    background: rgb(240, 255, 252);
+    border: none;
+    width: 12px;
+    margin: 0px;
+}
+
+QScrollBar::handle:vertical, QScrollBar::handle:horizontal {
+    background: rgb(0, 112, 82);
+    border-radius: 6px;
+    min-height: 20px;
+}
+
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical,
+QScrollBar::add-line:horizontal, QScrollBar::sub-line:horizontal {
+    background: none;
+    border: none;
+}
+
+QScrollBar:horizontal {
+    background: rgb(240, 255, 252);
+    border: none;
+    height: 12px;  /* ✅ Corrected for horizontal */
+    margin: 0px;
+}</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="cleanButton">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>310</y>
+       <width>111</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(0,77,56);
+color: rgb(255, 255, 255);
+font: 12pt &quot;Segoe UI&quot;;</string>
+     </property>
+     <property name="text">
+      <string>clean grave</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="waterButton">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>310</y>
+       <width>111</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 77, 56);
+font: 12pt &quot;Segoe UI&quot;;</string>
+     </property>
+     <property name="text">
+      <string>give water</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="flowerButton">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>310</y>
+       <width>111</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 77, 56);
+font: 12pt &quot;Segoe UI&quot;;</string>
+     </property>
+     <property name="text">
+      <string>add flower</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="back">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>360</y>
+       <width>231</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(0, 112, 82);
+color: rgb(255, 255, 255);
+font: 14pt &quot;Segoe UI&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Back</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

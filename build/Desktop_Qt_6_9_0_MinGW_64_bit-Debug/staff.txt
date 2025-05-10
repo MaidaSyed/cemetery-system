@@ -1,0 +1,5 @@
+morning guard,mGuard@gmail.com,mGuard@123
+after noon guard,anGuard@gmail.com,anGuard@123
+night guard,nGuard@gmail.com,nGuard@123
+senior manager,sManager@gmail.com,sManager@123
+junior manager,jManager@gmail.com,jManager@123
